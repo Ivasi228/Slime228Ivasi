@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3875668466034656841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3875668466034656949}
+  - component: {fileID: 3875668466034656842}
+  - component: {fileID: 3875668466034656840}
+  - component: {fileID: 3875668466034656948}
+  - component: {fileID: 3875668466034656951}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3875668466034656949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875668466034656841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &3875668466034656842
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875668466034656841}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5.5912457
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &3875668466034656840
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875668466034656841}
+  m_Enabled: 1
+--- !u!114 &3875668466034656948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875668466034656841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e92eaa3dcaf4c9447986570da01aab00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grid: {fileID: 0}
+  _tilemap: {fileID: 0}
+  _groundTile: {fileID: 11400000, guid: f305cb128e3054d4dafab222d6faf189, type: 2}
+  _center: {fileID: 3875668466034656841}
+  _sideSize: 12
+  _space: 2
+  _items:
+  - _tile: {fileID: 11400000, guid: a1a4017247f8f8d4e924b672d06185c4, type: 2}
+    _tilemap: {fileID: 0}
+    _chance: 15
+    _spawnOnGround: 1
+    _isGameobject: 0
+    _gameObject: {fileID: 0}
+  - _tile: {fileID: 11400000, guid: 751a642fa12a3c54687c2d8b7e2a3878, type: 2}
+    _tilemap: {fileID: 0}
+    _chance: 5
+    _spawnOnGround: 1
+    _isGameobject: 1
+    _gameObject: {fileID: 0}
+  - _tile: {fileID: 11400000, guid: 717492529163fdf4793e6567625f1efb, type: 2}
+    _tilemap: {fileID: 0}
+    _chance: 5
+    _spawnOnGround: 0
+    _isGameobject: 0
+    _gameObject: {fileID: 0}
+  _downTile: {fileID: 11400000, guid: c57a6c3adc56bc947b88d59156037c41, type: 2}
+  _downTilemap: {fileID: 0}
+--- !u!114 &3875668466034656951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3875668466034656841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d69186aa478f7243a1b9be51f030ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _who: {fileID: 0}
+  _lerp: 0.8
